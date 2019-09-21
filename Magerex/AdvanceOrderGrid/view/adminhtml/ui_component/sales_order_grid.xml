@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <columns name="sales_order_columns">
+      <column name="customer_detail" class="Magerex\AdvanceOrderGrid\Ui\Component\Listing\Column\CustomerDetail">
+        <argument name="data" xsi:type="array">
+            <item name="config" xsi:type="array">
+                <item name="filter" xsi:type="string">text</item>
+                <item name="bodyTmpl" xsi:type="string">ui/grid/cells/html</item>
+                <item name="editor" xsi:type="array">
+                    <item name="editorType" xsi:type="string">text</item>
+                    <item name="validation" xsi:type="array">
+                        <item name="required-entry" xsi:type="boolean">true</item>
+                    </item>
+                </item>
+                <item name="sortOrder" xsi:type="number">3</item>
+                <item name="label" xsi:type="string" translate="true">Customer Detail</item>
+            </item>
+        </argument>
+      </column>
+        <column name="billing_and_shippong_ext" class="Magerex\AdvanceOrderGrid\Ui\Component\Listing\Column\BillingAndShipping">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="filter" xsi:type="string">text</item>
+                    <item name="bodyTmpl" xsi:type="string">ui/grid/cells/html</item>
+                    <item name="editor" xsi:type="array">
+                        <item name="editorType" xsi:type="string">text</item>
+                        <item name="validation" xsi:type="array">
+                            <item name="required-entry" xsi:type="boolean">true</item>
+                        </item>
+                    </item>
+                    <item name="label" xsi:type="string" translate="true">Billing and Shipping Ext</item>
+                </item>
+            </argument>
+        </column>
+    </columns>
+
+</listing>
